@@ -27,7 +27,7 @@ jobs:
         ndk-version: 25.2.9519653
 
     - name: Build Release APK
-      run: ./gradlew assembleRelease
+      run: ./HelloWorldCompose/gradlew assembleRelease
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
