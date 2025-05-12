@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.helloworldcompose"
-    compileSdk = 35
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.example.helloworldcompose"
         minSdk = 21
-        targetSdk = 35
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
     }

@@ -26,10 +26,6 @@ jobs:
       - name: Run Gradle Wrapper Task
         run: gradle wrapper
 
-      - name: Build with Gradle
-        working-directory: ./HelloWorldCompose
-        run: ./gradlew assembleRelease
-
       - name: Commit Gradle Wrapper Files
         run: |
           git config --global user.name "github-actions[bot]"
