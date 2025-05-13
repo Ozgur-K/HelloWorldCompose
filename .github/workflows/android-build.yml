@@ -20,7 +20,7 @@ jobs:
         java-version: 21
 
     - name: Set up Android SDK
-      uses: android-actions/setup-android@v4
+      uses: android-actions/setup-android@v3
       with:
         api-level: 35
         build-tools-version: 35.0.0
