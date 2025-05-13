@@ -10,18 +10,29 @@ android {
     namespace = "com.example.helloworldcompose"
     compileSdk = 35
 
+signingConfigs {
+        create("debug") {
+            storeFile = file(System.getProperty("user.home") + "/.android/debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.getByName("debug")
+            isMinifyEnabled = false
+            isDebuggable = false
+        }
+    }
+
+
     defaultConfig {
         applicationId = "com.example.helloworldcompose"
         minSdk = 21
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-    }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-        }
     }
 
     compileOptions {
