@@ -73,4 +73,4 @@ jobs:
         with:
           name: app-release.apk
           overwrite: true
-          path: app/build/outputs/apk/release/app-release.apk
+          path: app/build/outputs/apk/release/*.apk
