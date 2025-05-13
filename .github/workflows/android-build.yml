@@ -27,7 +27,7 @@ jobs:
         ndk-version: 27.2.12479018
 
     - name: Make gradlew executable
-      run: chmod +x ./gradlew
+      run: chmod +x .HelloWorldCompose/gradlew
 
     - name: Build Release APK
       run: ./HelloWorldCompose/gradlew assembleRelease
