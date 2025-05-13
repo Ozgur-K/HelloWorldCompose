@@ -30,7 +30,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build Release APK
-      run: ./HelloWorldCompose/gradlew assembleRelease
+      run: ./gradlew assembleRelease
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
