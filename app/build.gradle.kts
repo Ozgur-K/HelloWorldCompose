@@ -10,17 +10,9 @@ android {
     namespace = "com.example.helloworldcompose"
     compileSdk = 35
 
-signingConfigs {
-        create("debug") {
-            storeFile = file(System.getProperty("user.home") + "/.android/debug.keystore")
-            storePassword = "android"
-            keyAlias = "androiddebugkey"
-            keyPassword = "android"
-        }
-    }
-    buildTypes {
+buildTypes {
         release {
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("debug") // use the default debug signing config
             isMinifyEnabled = false
             isDebuggable = false
         }
