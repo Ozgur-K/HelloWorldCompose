@@ -1,6 +1,8 @@
 plugins {
   id("com.android.application")
   kotlin("android")
+  
+id("org.jetbrains.kotlin.plugin.compose") version "2.1.21" // Add Compose plugin
 }
 
 
