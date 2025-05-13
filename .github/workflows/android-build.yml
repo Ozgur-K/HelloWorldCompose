@@ -71,5 +71,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-release-apk
+          name: app-release.apk
+          overwrite: true
           path: app/build/outputs/apk/release/app-release.apk
