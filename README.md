@@ -54,3 +54,10 @@ cat ~/.ssh/id_ed25519.pub
 ```
 ssh -T git@github.com
 ```
+
+- If there is no graddle wrapper in your project,
+workflow will create that, but it need permission.
+GitHub -> Your Project -> Settings -> Actions
+-> General Settings -> Workflow Permissions
+	give read and write permission and check
+	the box about pull requests
