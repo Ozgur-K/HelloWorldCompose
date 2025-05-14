@@ -22,7 +22,12 @@ class MainActivity : ComponentActivity() {
 fun HelloWorldApp() {
     MaterialTheme {
         Surface {
-            Text(text = "Hello World!")
+            Box(
+                modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(text = "Hello World!")
+            }
         }
     }
 }
