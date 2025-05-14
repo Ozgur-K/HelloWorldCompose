@@ -22,14 +22,9 @@ class MainActivity : ComponentActivity() {
 fun HelloWorldApp() {
     MaterialTheme {
         Surface {
-            Box(
-                modifier = Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center
-            ) {
                 Text(text = "Hello World!")
             }
         }
-    }
 }
 
 @Preview(showBackground = true)
