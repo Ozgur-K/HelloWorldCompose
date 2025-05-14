@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
 fun HelloWorldApp() {
     MaterialTheme {
         Surface {
-                Text(text = "Hello World!")
+                Text(text = "Hello video")
             }
         }
 }
